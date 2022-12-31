@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>lunaria</title>
+  </head>
+  <body>
+    <div>
+      <hr />
+      <div class="flex gap-1 justify-end pr-[5%]">
+        <p class="text-[yellow]">Stand</p>
+        <p class="text-[blue]">with Ukraine</p>
+      </div>
+      <hr />
+      <div class="text-2xl tracking-[15px]">LUNARI</div>
+      <span class="font-thin text-sm">WEB. UI. DEV.</span>
+      <div>
+        <div class="text-4xl">
+          Lunaria is the leading in IT<br />
+          integratorfor talking your
+          <br />
+          business to the next level
+        </div>
+        <div>Drive profit omnichannel IT tranformation</div>
+      </div>
+      <div>
+        <div id="sticky-header" class="flex justify-around">
+          <div class="flex gap-3">
+            <div class="text-2xl tracking-[15px]">LUNARI</div>
+            <span class="font-thin text-sm">WEB. UI. DEV.</span>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-[yellow]">Stand</span>
+            <span class="text-[blue]">with Ukraine</span>
+          </div>
+          <div class="flex justify-end gap-3 md:gap-20 font-bold">
+            <a href="#portfolio">portfolio</a><a href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div>What we DO:</div>
+        <div class="flex justify-end gap-6 md:gap-20 font-bold pr-[5%]">
+          <a href="#portfolio">portfolio</a><a href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="flex justify-around">
+        <div>01</div>
+        <div class="flex justify-around">
+          <div>Design & UX</div>
+          <div>
+            Development of a detaied roadmap to create or enhance your brand or
+            digital product expirience
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="flex justify-around">
+        <div>02</div>
+        <div class="flex justify-around">
+          <div>Development and integratation</div>
+          <div>
+            Development, support, and scaling of high-traffic and high-load IT
+            projects. Development of core website functionality, data storage
+            and processing systems, data platforms, and buses.
+            Back-end-developmentBack-end-development.
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="flex justify-around">
+        <div>03</div>
+        <div class="flex justify-around">
+          <div>Business and systems analytics</div>
+          <div>
+            Transformation of business development goals into an approved list
+            of tasks for the implementation, customization, or integration of
+            third-party or in-house IT solutions.
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="main">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <h5>Arcu dui vivamus arcu felis bibendum</h5>
+          <img class="fakeimg" src="./images/img-1.jpg" />
+          <p>Excepteur sint occaecat</p>
+
+          <br />
+          <h2>Fermentum dui faucibus in ornare quam</h2>
+          <h5>Viverra nibh cras pulvinar</h5>
+          <img class="fakeimg" src="./images/img-4.jpg" />
+          <p>Scelerisque mauris pellentesque</p>
+          <p>
+            Scelerisque pellentesque pulvinar pellentesque habitant morbi
+            tristique senectus et. Tempor orci eu lobortis elementum nibh tellus
+            molestie nunc.
+          </p>
+        </div>
+        <div class="side">
+          <h2>Eget mi proin</h2>
+          <h5>Sed libero enim:</h5>
+          <img class="fakeimg" src="./images/s-img-1.jpg" />
+          <p>Massa tincidunt dui ut ornare lectus sit amet est.</p>
+          <h3>Mi ipsum faucibus</h3>
+          <p>Lorem ipsum dolor sit ame.</p>
+          <img class="fakeimg" src="./images/s-img-2.jpg" />
+          <h3>Malesuada fames</h3>
+          <p>In nisl nisi scelerisque eu ultrices.</p>
+          <img class="fakeimg" src="./images/s-img-3.jpg" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var header = document.getElementById("sticky-header");
+      var stickyPosition = header.offsetTop + header.offsetHeight;
+      window.onscroll = function () {
+        if (window.pageYOffset > stickyPosition) {
+          header.classList.add("sticky");
+          document.getElementById("sticky-header").style.visibility = "visible";
+          document.querySelectorAll("body")[0].style.marginTop =
+            header.offsetHeight + "px";
+        } else {
+          header.classList.remove("sticky");
+          document.querySelectorAll("body")[0].style.marginTop = "0px";
+          document.getElementById("sticky-header").style.visibility = "hidden";
+        }
+      };
+    </script>
+  </body>
+</html>
