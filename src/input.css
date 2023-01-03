@@ -20,6 +20,15 @@
   background-color: black;
 }
 
+@keyframes slide {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
 @keyframes smoothScroll {
   0% {
     transform: translateY(-100px);
@@ -37,22 +46,9 @@
   text-align: center;
   font-size: 14px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.swiper-slide img {
-  width: 58%;
-  object-fit: cover;
-}
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: 140px !important;
-  left: auto;
-}
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  left: 140px !important;
-  right: auto;
 }
 
 @media only screen and (min-width: 640px) {
@@ -70,4 +66,16 @@
   width: 200px;
   height: 200px;
   background-image: url(/img/image1.png);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.is-active + .answer {
+  max-height: 200px;
+  width: 200px;
+  padding: 10px 0;
 }
