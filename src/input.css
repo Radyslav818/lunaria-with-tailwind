@@ -20,15 +20,6 @@
   background-color: black;
 }
 
-@keyframes slide {
-  from {
-    top: 100%;
-  }
-  to {
-    top: 0;
-  }
-}
-
 @keyframes smoothScroll {
   0% {
     transform: translateY(-100px);
@@ -51,21 +42,24 @@
   align-items: center;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .swiper-slide {
     font-size: 16px;
   }
+  .slide-in-container {
+    width: 150px;
+    height: 180px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .swiper-slide {
     font-size: 25px;
   }
-}
-.imageContainer {
-  width: 200px;
-  height: 200px;
-  background-image: url(/img/image1.png);
+  .slide-in-container {
+    width: 240px;
+    height: 250px;
+  }
 }
 
 .answer {
@@ -78,4 +72,30 @@
   max-height: 200px;
   width: 200px;
   padding: 10px 0;
+}
+
+.slide-in-container {
+  position: relative;
+  overflow: hidden;
+  width: full;
+  height: 300px;
+}
+.img {
+  width: inherit;
+  height: inherit;
+  animation: slide 1.5s;
+  animation-iteration-count: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+@keyframes slide {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
 }
