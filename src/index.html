@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-2"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>lunaria</title>
   </head>
   <body>
@@ -14,38 +27,42 @@
         <p class="text-[blue]">with Ukraine</p>
       </div>
       <hr />
-      <div class="text-2xl tracking-[15px]">LUNARI</div>
-      <span class="font-thin text-sm">WEB. UI. DEV.</span>
-      <div>
-        <div class="text-4xl">
-          Lunaria is the leading in IT<br />
-          integratorfor talking your
-          <br />
-          business to the next level
+      <div class="ml-[5%]">
+        <div class="text-xl md:text-2xl tracking-[15px]">LUNARI</div>
+        <span class="font-thin text-xs md:text-sm">WEB. UI. DEV.</span>
+        <div class="ml-[5%] md:ml-[15%] mt-[2%]">
+          <div class="text-4xl lg:text-5xl">
+            Lunaria is the leading in IT<br />
+            integratorfor talking your
+            <br />
+            business to the next level
+          </div>
+          <div class="text-sm md:text-base">
+            Drive profit omnichannel IT tranformation
+          </div>
         </div>
-        <div>Drive profit omnichannel IT tranformation</div>
       </div>
       <div>
         <div
           id="sticky-header"
-          class="flex items-center justify-around sm:h-[5%] md:h-[10%] border-b-2 border-gray-500"
+          class="flex items-center justify-around sm:h-[5%] md:h-[10%] border-b-2 border-gray-500 z-10 absolut"
         >
           <div class="flex items-center gap-3">
-            <div class="text-2xl tracking-[15px]">LUNARI</div>
+            <div class="text-lg md:text-2xl tracking-[15px]">LUNARI</div>
             <span class="font-thin text-sm">WEB. UI. DEV.</span>
           </div>
-          <div class="flex gap-1">
+          <div class="flex gap-1 text-sm md:text-base">
             <span class="text-[yellow]">Stand</span>
             <span class="text-[blue]">with Ukraine</span>
           </div>
-          <div class="flex justify-end sm:gap-3 md:gap-20 font-bold">
+          <div class="flex justify-end gap-3 md:gap-20 font-bold text-sm">
             <a href="#portfolio">portfolio</a><a href="#contact">Contact Us</a>
           </div>
         </div>
       </div>
-      <div class="flex justify-between">
-        <div>What we DO:</div>
-        <div class="flex justify-end sm:gap-6 md:gap-20 font-bold pr-[4%]">
+      <div class="flex justify-between mt-[2%]">
+        <div class="ml-[13%]">What we DO:</div>
+        <div class="flex justify-end gap-6 md:gap-20 font-bold pr-[4%]">
           <a href="#portfolio">portfolio</a><a href="#contact">Contact Us</a>
         </div>
       </div>
@@ -53,9 +70,9 @@
       <hr />
 
       <div class="flex items-start md:mt-[3%] lg:h-[120px]">
-        <div class="ml-[7%]">01</div>
+        <div class="ml-[7%] text-gray-500">01</div>
         <div class="w-[30%] sm:text-2xl md:text-3xl ml-[5%]">Design & UX</div>
-        <div class="w-[40%] sm:text-sm md:text-base ml-[10%]">
+        <div class="w-[40%] text-sm md:text-base ml-[10%]">
           Development of a detaied roadmap to create or enhance your brand or
           digital product expirience
         </div>
@@ -64,11 +81,11 @@
       <hr />
 
       <div class="flex items-start md:mt-[3%] lg:h-[120px]">
-        <div class="ml-[7%]">02</div>
+        <div class="ml-[7%] text-gray-500">02</div>
         <div class="w-[30%] sm:text-2xl md:text-3xl ml-[5%]">
           Development and integratation
         </div>
-        <div class="w-[40%] sm:text-sm md:text-base ml-[10%]">
+        <div class="w-[40%] text-sm md:text-base ml-[10%]">
           Development, support, and scaling of high-traffic and high-load IT
           projects. Development of core website functionality, data storage and
           processing systems, data platforms, and buses.
@@ -79,11 +96,11 @@
       <hr />
 
       <div class="flex items-start md:mt-[3%] lg:h-[120px]">
-        <div class="ml-[7%]">03</div>
+        <div class="ml-[7%] text-gray-500">03</div>
         <div class="w-[30%] sm:text-2xl md:text-3xl ml-[5%]">
           Business and systems analytics
         </div>
-        <div class="w-[40%] sm:text-sm md:text-base ml-[10%]">
+        <div class="w-[40%] text-sm md:text-base ml-[10%]">
           Transformation of business development goals into an approved list of
           tasks for the implementation, customization, or integration of
           third-party or in-house IT solutions.
@@ -92,41 +109,81 @@
 
       <hr />
 
-      <div class="row">
-        <div class="main">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <h5>Arcu dui vivamus arcu felis bibendum</h5>
-          <img class="fakeimg" src="./images/img-1.jpg" />
-          <p>Excepteur sint occaecat</p>
-
-          <br />
-          <h2>Fermentum dui faucibus in ornare quam</h2>
-          <h5>Viverra nibh cras pulvinar</h5>
-          <img class="fakeimg" src="./images/img-4.jpg" />
-          <p>Scelerisque mauris pellentesque</p>
-          <p>
-            Scelerisque pellentesque pulvinar pellentesque habitant morbi
-            tristique senectus et. Tempor orci eu lobortis elementum nibh tellus
-            molestie nunc.
-          </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div id="plus" type="button" class="swiper-slide">&plus; Quality</div>
+          <div id="welcomeDiv" style="display: none" class="answer_list">
+            WELCOME
+          </div>
+          <div class="swiper-slide">&plus; Guaranty</div>
+          <div class="swiper-slide">&plus; transparency of cooperation</div>
+          <div class="swiper-slide">&plus; confiturn</div>
         </div>
-        <div class="side">
-          <h2>Eget mi proin</h2>
-          <h5>Sed libero enim:</h5>
-          <img class="fakeimg" src="./images/s-img-1.jpg" />
-          <p>Massa tincidunt dui ut ornare lectus sit amet est.</p>
-          <h3>Mi ipsum faucibus</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <img class="fakeimg" src="./images/s-img-2.jpg" />
-          <h3>Malesuada fames</h3>
-          <p>In nisl nisi scelerisque eu ultrices.</p>
-          <img class="fakeimg" src="./images/s-img-3.jpg" />
+      </div>
+
+      <hr />
+
+      <div class="flex items-start md:mt-[3%]">
+        <div class="w-[30%] sm:text-2xl md:text-3xl ml-[14%]">About US</div>
+        <div class="w-[40%] ml-[10.3%]">
+          <div class="text-sm md:text-base">
+            We operate with over 20 employees in more than 5 countries in a
+            number of key disciplines such as sales & marketing, research &
+            development, operations & supply chain, information technology,
+            finance and human resources.
+          </div>
+          <div class="md:text-lg">MORE ABOUT US &#x2192;</div>
+        </div>
+      </div>
+
+      <div
+        class="gap-5 lg:gap-0 m-[10%] md:m-[5%] flex flex-col md:flex-row lg:flex-row justify-around lg:justify-around font-[Marcellus]"
+      >
+        <div
+          class="w-full md:w-[15%] lg:w-[18%] h-[250px] md:h-[200px] lg:h-[300px] bg-cover"
+          style="background-image: url(./img/image1.png)"
+        >
+          <div>
+            <div>Vanessa Kany</div>
+            <div>Creative Design Derector</div>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-[15%] lg:w-[18%] h-[250px] md:h-[200px] lg:h-[300px] bg-cover object-cover"
+          style="background-image: url(./img/image2.png)"
+        >
+          <div>
+            <div>Jeff Puritt</div>
+            <div>Chief Legal Officer</div>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-[15%] lg:w-[18%] h-[250px] md:h-[200px] lg:h-[300px] bg-cover"
+          style="background-image: url(./img/image3.png)"
+        >
+          <div>
+            <div>Vanessa Kany</div>
+            <div>Creative Design Derector</div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="flex items-start md:mt-[3%]">
+        <div class="w-[30%] sm:text-2xl md:text-3xl ml-[14%]">Projects</div>
+        <div class="w-[40%] ml-[10.3%]">
+          <div class="text-sm md:text-base">
+            we combine sharp design with rich technology to craft exciting
+            brands.
+          </div>
         </div>
       </div>
     </div>
     <script>
-      var header = document.getElementById("sticky-header");
-      var stickyPosition = header.offsetTop + header.offsetHeight;
+      let header = document.getElementById("sticky-header");
+      let stickyPosition = header.offsetTop + header.offsetHeight;
+
       window.onscroll = function () {
         if (window.pageYOffset > stickyPosition) {
           header.classList.add("sticky");
@@ -139,6 +196,53 @@
           document.getElementById("sticky-header").style.visibility = "hidden";
         }
       };
+
+      let plus = document.getElementById("plus");
+      let isClicked = false;
+
+      function showWord() {
+        console.log(isClicked);
+        if (!isClicked) {
+          document.getElementById("welcomeDiv").style.display = "block";
+          isClicked = true;
+        } else {
+          document.getElementById("welcomeDiv").style.display = "none";
+          isClicked = false;
+        }
+      }
+
+      plus.addEventListener("mousedown", showWord);
+
+      let swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slideToClickedSlide: false,
+        slidesPerView: 3.7,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: false,
+      });
+      swiper.on("slideChange", function () {
+        let $curSlide = this.slides[this.activeIndex];
+
+        // это чтобы показать, что клик срабатывает
+        const logClick = (e) => console.log(e.target.textContent);
+
+        // это чтобы показать, что клик срабатывает
+        $curSlide.addEventListener("click", logClick);
+
+        // кликаем
+        $curSlide.click();
+
+        // это чтобы показать, что клик срабатывает
+        $curSlide.removeEventListener("click", logClick);
+      });
     </script>
   </body>
 </html>
