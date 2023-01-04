@@ -5,4 +5,4 @@ npm i
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
 
-open src directory, in directory "open with live server" index.html
+In VS Code open directory src, https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer open live Server index.html
