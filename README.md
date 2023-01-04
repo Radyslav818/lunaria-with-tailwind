@@ -10,5 +10,5 @@ In VS Code open directory src, https://marketplace.visualstudio.com/items?itemNa
 or
 
 Open two terminals at the same time
-first terminal input npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-second terminal input live-server ./ , open src
+first terminal input command: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+second terminal input command: live-server ./ , open src
