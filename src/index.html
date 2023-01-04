@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/a7d877cb2f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -232,24 +236,64 @@
       <hr />
 
       <div id="contact" class="flex items-start md:mt-[3%]">
-        <div class="w-[30%] sm:text-2xl md:text-3xl ml-[14%]">Contact US</div>
+        <div class="ml-[14%] w-[30%]">
+          <div class="sm:text-2xl md:text-3xl">Contact US</div>
+          <div
+            class="mt-[60%] sm:mt-[55%] lg:mt-[20%] md:mt-[50%] text-sm md:text-base"
+          >
+            <div class="mb-[2%]">Lunaria@gmail.com</div>
+            <div>+32 087 3467 911</div>
+          </div>
+        </div>
+
         <div class="w-[40%] ml-[10.3%]">
-          <div class="text-sm md:text-base">
-            If you have any questions, please contact us. To enhance
-            productivity each project team has its own space in the office. If
-            someone needs silence, there are spaces with cozy armchairs to make
-            you comfortable.
+          <div class="flex flex-col">
+            <div class="text-sm md:text-base">
+              If you have any questions, please contact us. To enhance
+              productivity each project team has its own space in the office. If
+              someone needs silence, there are spaces with cozy armchairs to
+              make you comfortable.
+              <div class="mt-[10%] fa-lg md:fa-xl">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <div
+                  class="mt-[1%] font-[Marcellus] text-lg md:text-xl lg:text-2xl"
+                >
+                  2650 Thousand
+                  <br />
+                  Oaks Blvd, Memphis,s
+                  <br />
+                  TN 38118
+                </div>
+              </div>
+            </div>
+            <div class="mt-[10%]">
+              <div class="mb-[1%] text-sm md:text-lg">Our social network:</div>
+              <div class="flex gap-3 fa-lg md:fa-xl">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="mx-[4%] my-[2%] text-sm md:text-lg">
+      <div>LUNARIA © 2010–2022 All rights are register</div>
+      <div>Terms policy</div>
+    </div>
+
     <script>
       const questions = document.querySelectorAll(".question");
       // Add a click listener
       questions.forEach((question) => {
         question.addEventListener("click", ({ target }) => {
           // Change the state of the button
+          console.log(target);
           target.classList.toggle("is-active");
+          console.log(target);
         });
       });
 
