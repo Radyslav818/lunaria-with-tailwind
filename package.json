@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind": "tailwindcss  -i ./src/input.css -o dist/output.css --minify  & live-server  ",
+    "dev": "live-server  & postcss src/input.css -o ./dist/output.css --minify --watch  ",
+    "start": "live-server ./ ",
+    "build": "postcss css/main.css -o build/tailwind.css --minify"
   },
   "keywords": [],
   "author": "",
