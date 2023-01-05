@@ -263,14 +263,36 @@
       <div class="flex flex-col w-[50%] ml-[14%] mt-[5%]">
         <form>
           <label for="fname">Your Name</label>
-          <input type="text" id="fname" name="fname" />
+          <input type="text" id="fname" name="fname" required />
           <label for="lname"
             >Your Contact / Email or Phone with Messengers
           </label>
-          <input type="text" id="lname" name="lname" />
+          <input type="text" id="lname" name="lname" required />
           <label for="lname">Add text or Comment About project </label>
-          <input type="text" id="lname" name="lname" />
+          <textarea
+            put
+            type="text"
+            value="message"
+            name="message"
+            id=""
+            cols=""
+            rows="1"
+            placeholder="Your message*"
+            required
+          ></textarea>
+          <button>Send message</button>
         </form>
+        <div>
+          <input
+            type="range"
+            value="1250"
+            min="500"
+            max="25000"
+            step="50"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>1250</output>
+        </div>
       </div>
       <hr />
 
