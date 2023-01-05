@@ -50,6 +50,9 @@
     width: 150px;
     height: 180px;
   }
+  .button {
+    padding: 20px 70px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -59,6 +62,9 @@
   .slide-in-container {
     width: 240px;
     height: 250px;
+  }
+  .button {
+    padding: 20px 70px;
   }
 }
 
@@ -108,5 +114,35 @@ input[type="text"] {
   background-color: black;
   color: white;
   border: none;
-  border-bottom: 2px solid rgb(37, 22, 22);
+  border-bottom: 2px solid gray;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.button {
+  background-color: rgb(45, 45, 45);
+  border: none;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 10%;
+  margin-bottom: 4%;
 }
